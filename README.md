@@ -18,7 +18,7 @@ Além de ser um projeto 100% gratuito (Sério!), com suporte completo ao auto-es
 
 Não apenas é possível contruir uma carreira a partir das lições e diversos recrusos do _site_, mas também vivenciar uma experiência genuinamente engrandecedora ao fazer parte de uma comunidade onde o compartilhamento de conhecimento de qualidade, através de uma conduta de honestidade acadêmica e atitudes positivas são o principal foco das atividades.
 
-É importante frisar que o FCC recebe doações, então, se você acredita que o projeto entrega valor para seus usuários e pode dispor dos valores solicitados, não esqueça de visitar a página de [Doações](https://www.freecodecamp.org/donate/) e fazer sua contribuição. Agradeço em nome do projeto, com muito carinho <3
+É importante frisar que o FCC recebe doações, então, se você acredita que o projeto entrega valor para seus usuários e pode dispor dos valores solicitados, não esqueça de visitar a página de [Doações](https://www.freecodecamp.org/donate/) e fazer sua contribuição. Agradeço em nome do projeto, com muito carinho :heart:
 
 \- Moka
 
