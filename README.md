@@ -24,11 +24,11 @@ Não apenas é possível contruir uma carreira a partir das lições e diversos 
 
 ## Recursos
 
-### Free Code Camp
+### Free Code Camp (FCC)
 
 Como dito antes, este é o nosso currículo principal. Vamos começar com _Responsive Web Design_ e concluir todas as atividades que pudermos!
 
-Endereço: [Free Code Camp](https://freecodecamp.org) (FCC)
+Endereço: [Free Code Camp](https://freecodecamp.org)
 
 ### W3 Schools
 
