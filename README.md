@@ -2,7 +2,7 @@
 
 Prelúdio é aquele que vem antes de tudo. Mas também é um moço querido que tem voz de "quiança" e gosta de "nerdices" de computação.
 
-Ele topou participar de algumas [transmissões _on-line_ com o Moka](https://twitch.tv/MokaTechPlays), um moço "véio" das computações (E também de idade), que gosta estudar porque é "nerdola" desde pequenininho.
+Ele topou participar de algumas [transmissões _on-line_ com o Moka](https://twitch.tv/MokaTechPlays), um "moço véio" das computações (E também de idade), que gosta estudar porque é "nerdola" desde pequenininho.
 
 Aqui a gente vai manter alguns dos recursos relevantes para os estudos, como anotações importantes e orientações que julgarmos necessárias para fazer um bom acompanhamento das atividades.
 
@@ -39,3 +39,7 @@ No passado, praticamente só tratava de HTML, CSS e JavaScript, mas hoje em dia 
 Endereço: [W3 Schools](https://www.w3schools.com/)
 
 \- Moka
+
+## Refefências complementares
+
+Durante as transmissões, entre a execução de uma lição e outra, a gente bate muito papo. Não é raro sairmos um pouco do tópico para falar uma bobeira ou outra, mas quase sempre acabamos discutindo assuntos da área de Computação. Como 
