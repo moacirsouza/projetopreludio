@@ -42,4 +42,4 @@ Endereço: [W3 Schools](https://www.w3schools.com/)
 
 ## Refefências complementares
 
-Durante as transmissões, entre a execução de uma lição e outra, a gente bate muito papo. Não é raro sairmos um pouco do tópico para falar uma bobeira ou outra, mas quase sempre acabamos discutindo assuntos da área de Computação. Como 
+Durante as transmissões, entre a execução de uma lição e outra, a gente bate muito papo. Não é raro sairmos um pouco do tópico para falar uma bobeira ou outra, mas quase sempre acabamos discutindo assuntos da área de Computação. Como, por exemplo, isso que não faz sentido, mas que eu estou escrevendo apenas como exemplo.
