@@ -14,7 +14,7 @@ Sinta-se à vontade para dar um pulinho no canal, bater um papo e estudar com a 
 
 Nossa ideia é estudar desenvolvimento _web_ usando o [Free Code Camp](https://freecodecamp.org) (FCC) como principal referência acadêmica.
 
-Além de ser um projeto 100% gratuito (Sério!), com suporte completo ao auto-estudo através de um currículo moderno e recheado de atividades que simulam a experiência real de um desenvolvedor da área, o FCC também emite certificados verificados e amplamente aceitos no mercado de trabalho.
+Além de ser um projeto 100% gratuito (Sério!), com suporte completo ao auto-estudo através de um currículo moderno e recheado de atividades que simulam a experiência real de um desenvolvedor da área, o FCC também emite certificados verificados e amplamente aceitos no mercado de trabalho. Os certificados também são gratuitos!
 
 Não apenas é possível construir uma carreira a partir das lições e diversos recursos do _site_, mas também vivenciar uma experiência genuinamente engrandecedora ao fazer parte de uma comunidade onde o compartilhamento de conhecimento de qualidade, através de uma conduta de honestidade acadêmica e atitudes positivas são o principal foco das atividades.
 
@@ -32,7 +32,7 @@ Endereço: [Free Code Camp](https://freecodecamp.org)
 
 ### W3 Schools
 
-Outro excelente _site_ com informações relevantes, atualizadas e gratuitas, o W3 é um dos mais antigos centralizadores de informações sobre tudo relacionado a desenvolvimento _web_ (Foi lançado em 1998!).
+Outro excelente _site_ com informações relevantes, atualizadas e gratuitas, o W3Schools é um dos mais antigos centralizadores de informações sobre tudo relacionado a desenvolvimento _web_ (Foi lançado em 1998!).
 
 No passado, praticamente só tratava de HTML, CSS e JavaScript, mas hoje em dia possui uma miríade gigantesca de cursos sobre várias linguagens e ferramentas de programação. Embora possua três planos pagos, todo o conteúdo pode ser acessado gratuitamente e o único grande investimento financeiro requerido é o pagamento para realização das provas para a aquisição dos certificados.
 
@@ -42,4 +42,12 @@ Endereço: [W3 Schools](https://www.w3schools.com/)
 
 ## Refefências complementares
 
-Durante as transmissões, entre a execução de uma lição e outra, a gente bate muito papo. Não é raro sairmos um pouco do tópico para falar uma bobeira ou outra, mas quase sempre acabamos discutindo assuntos da área de Computação. Como, por exemplo, isso que não faz sentido, mas que eu estou escrevendo apenas como exemplo.
+Durante as transmissões, entre uma lição e outra, a gente bate muito papo. Não é raro sairmos um pouco do tópico para falar uma bobeira ou outra, mas quase sempre finalizamos com assuntos relacionados à área de Computação.
+
+Tirando as "bobeiras aleatórias" (Como a discussão sobre a [Lagosta pugilista, que tem um 'soco ultrasônico'](https://goodandgreenguides.com/boxing-lobster-or-rainbow-lobster-caracteristics-and-scientific-name)), estas conversas normalmente trazem recursos complementares, que vão desde sugestões de leituras, vídeos e outros projetos, até longas discussões sobre alguma experiência vivida pelo pessoal da transmissão ou do _chat_.
+
+A documentação destas referências vai ser responsabilidade do [Sr. Prelúdio](https://github.com/SeuAilton), meu co-apresentador/_streamer_ e companheiro de projeto. Manda ver, moço!
+
+Acesse aqui a página de [recursos complementres](recursosComplementares.md)!
+
+\- Moka
