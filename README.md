@@ -40,7 +40,7 @@ Endereço: [W3 Schools](https://www.w3schools.com/)
 
 \- Moka
 
-## Refefências complementares
+## Recursos complementares
 
 Durante as transmissões, entre uma lição e outra, a gente bate muito papo. Não é raro sairmos um pouco do tópico para falar uma bobeira ou outra, mas quase sempre finalizamos com assuntos relacionados à área de Computação.
 
