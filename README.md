@@ -12,7 +12,7 @@ Sinta-se à vontade para dar um pulinho no canal, bater um papo e estudar com a 
 
 ## Motivação
 
-Nossa ideia é estudar desenvolvimento _web_ usando o [Free Code Camp](https://freecodecamp.org) (FCC) como principal referência acadêmica.
+Nossa ideia é estudar desenvolvimento de sistemas usando o [Free Code Camp](https://freecodecamp.org) (FCC) como principal referência acadêmica.
 
 Além de ser um projeto 100% gratuito (Sério!), com suporte completo ao auto-estudo através de um currículo moderno e recheado de atividades que simulam a experiência real de um desenvolvedor da área, o FCC também emite certificados verificados e amplamente aceitos no mercado de trabalho. Os certificados também são gratuitos!
 
