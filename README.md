@@ -51,7 +51,3 @@ A documentação destas referências vai ser responsabilidade do [Sr. Prelúdio]
 Acesse aqui a página de [recursos complementres](recursosComplementares.md)!
 
 \- Moka
-
-Novidade
-Outra novidade!
-Última novidade...
