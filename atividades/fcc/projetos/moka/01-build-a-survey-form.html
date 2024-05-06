@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta chartset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Title</h1>
+      <p id="description">Description</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" type="text" required placeholder="Your name">
+        <label id="email-label" for="email">E-Mail</label>
+        <input id="email" type="email" required placeholder="email@provider.domain">
+        <label id="number-label" for="number">Age</label>
+        <input id="number" type="number" min="13" max="120" placeholder="Numbers only">
+        <label id="dropdown-label" for="dropdown">Select an option:</label>
+        <select id="dropdown">
+          <option id="option-00" value="">(Choose one)</option>
+          <option id="option-01" value="option-01">Option 01</option>
+          <option id="option-02" value="option-02">Option 02</option>
+        </select>
+        <label>Radio Buttons area</label>
+        <hr>
+        <input id="radio-01" type="radio" name="radio-buttons-group" value="radio-01" class="inline" checked>
+        <label id="radio-01-label" for="radio-01" class="radio-checkbox-label">Radio 01</label>
+        <input id="radio-02" type="radio" name="radio-buttons-group" value="radio-02" class="inline">
+        <label id="radio-01-label" for="radio-02" class="radio-checkbox-label">Radio 02</label>
+        <label>Checkboxes area</label>
+        <hr>
+        <input id="checkbox-01" type="checkbox" value="checkbox-01" class="inline">
+        <label id="checkbox-01-label" for="checkbox-01" class="radio-checkbox-label">Checkbox 01</label>
+        <input id="checkbox-02" type="checkbox" value="checkbox-02" class="inline">
+        <label id="checkbox-02-label" for="checkbox-02" class="radio-checkbox-label">Checkbox 02</label>
+        <input id="checkbox-03" type="checkbox" value="checkbox-03" class="inline">
+        <label id="checkbox-03-label" for="checkbox-03" class="radio-checkbox-label">Checkbox 03</label>
+        <label id="textarea-label" for="textarea">Textarea</label>
+        <textarea id="textarea"></textarea>
+        <input id="submit" type="submit" value="Submit">
+      </form>
+    </main>
+    <footer>Footer</footer>
+  </body>
+</html>

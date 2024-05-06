@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Ubuntu, Tahoma, Arial;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+body {
+  background: url("http://i.stack.imgur.com/vhoa0.jpg") no-repeat center fixed;
+  background-size: cover;
+}
+
+header, main, footer {
+  max-width: 400px;
+  min-width: 350px;
+  margin: auto;
+}
+
+main {
+  background-color: #2E8BC0AF;
+  padding-bottom: 5px;
+  border-radius: unset;
+}
+
+header, footer {
+  text-align: center;
+  color: #BBB68E;
+}
+
+header h1 {
+  background-color: #0C2D48;
+  color: #f8ef8d;
+  border-radius: 5px 10px;
+  margin: 10px auto;
+  padding: 5px 0;
+}
+
+header p, footer {
+  background-color: #274472;
+  border-radius: 10px 10px 0 0;
+  padding: 5px 0;
+}
+
+footer {
+  border-radius: 0 0 10px 10px;
+}
+
+label {
+  color: #0C2D48;
+  margin-left: 0.5em;
+}
+
+input, textarea, select {
+  display: block;
+  margin: 0.2em auto;
+  width: 95%;
+  min-height: 2em;
+  background-color: #0C2D48;
+  border: 1px solid #0C2D48;
+  color: #FFFFFF;
+  padding: 0.5em;
+}
+
+hr {
+  color: #0C2D48;
+  width: 95%;
+  margin: auto;
+}
+
+.inline {
+  width: unset;
+  display: inline;
+  vertical-align: -6px;
+  margin-left: 0.8em;
+}
+
+.radio-checkbox-label {
+  margin: unset;
+  display: inline-block;
+  width: 90%;
+}
+
+#submit {
+  margin-top: 0.5em;
+  width: 60%;
+}
+
+#submit:hover {
+ background-color: #274472; 
+}
+
+#submit:active {
+  background-color: #ffffff;
+  color: #0C2D48;
+}
