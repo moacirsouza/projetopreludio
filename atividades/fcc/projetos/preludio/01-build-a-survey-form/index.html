@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Matrix</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Matrix</h1>
+      <p id="description">
+        Deseja entrar na Matrix?
+      </p>
+    </header>
+    <main>
+      <form id="survey-form" method="post">
+
+       <label id="name-label" for="name"><strong>Nome:</strong> <input type="text" id="name" class="info" placeholder="Nome completo" required /></label>
+
+       <label id="email-label" for="email"><strong> Email:</strong>  <input type="email" id="email" class="info" placeholder="www.email@email.com" required /></label>
+
+       <label id="number-label" for="number"><strong> Idade:</strong>  <input type="number" id="number" min="13" max="120" class="info" placeholder="Mínimo 13 anos" /></label>
+       
+       <select id="dropdown">
+         <option value="">(escolha um)</option>
+         <option value="1">teste 1</option>
+         <option value="2">teste 2</option>
+       </select>
+       
+       <p id="escolha">Faça sua escolha!</p>
+
+       <label class="label-pilula"
+       id="label-pilula-vermelha" for="pilula-vermelha">Entrar na Matrix: <input type="radio" id="pilula-vermelha" name="pilula" value="pilula-vermelha" class="pilula" checked /></label>
+
+       <label class="label-pilula"
+       id="label-pilula-azul" for="pilula-azul">Ficar de fora: <input type="radio" id="pilula-azul" name="pilula" value="pilula-azul" class="pilula"/></label>
+
+       <p id="objetivo">Qual seu objetivo?</p>
+
+       <label for="checkbox1">Amassar robô no soco: <input type="checkbox" id="checkbox1" value="check1" /></label>
+
+       <label for="checkbox2">Montar num mecha: <input type="checkbox" id="checkbox2" value="checkbox2" class="formatando"/></label>
+
+       <label for="checkbox3">Achar uma webnamorada: <input type="checkbox" id="checkbox3" value="checkbox3" /></label>
+
+       <label for="biografia"><strong>Biografia:</strong> <textarea id="biografia" name="biografia" rows="3" cols="30" placeholder="Gosto de exterminar máquinas..."></textarea></label>
+
+       <input id="submit" type="submit" value="Submit" /> 
+      </form>
+    </main>
+    <footer>
+      <p>
+        <a href="https://github.com/SeuAilton" target="_blank">SeuAilton (Prelúdio)</a>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+  background: url("https://img.freepik.com/premium-vector/digital-background-green-matrix-binary-computer-code_47243-763.jpg?w=740") no-repeat center fixed;
+  background-size: cover;
+}
+
+h1, p {
+  text-align: center;
+  padding: 2px;
+}
+
+h1 {
+  background-color: black;
+  color: #84D857;
+  font-size: 3em;
+}
+
+label {
+  display: block;
+  margin: 10px;
+  padding: 5px;
+}
+
+header {
+  border-radius: 10px;
+}
+
+header, footer, form {
+  max-width: 500px;
+  min-width: 300px;
+  margin: auto;
+}
+
+form {
+  background-color: #84D857;
+  border-radius: 10px 10px 0 0;
+}
+
+p {
+  background-color: black;
+  color: #84D857;
+}
+
+.info {
+  width: 60%;
+  height: 25px;
+  background-color: green;
+  color: white;
+}
+
+.label-pilula {
+  display: inline;
+  padding: 20px;
+  margin: 50px;
+  font-size: 1.3em;
+}
+
+#label-pilula-vermelha {
+  color: red;
+  display: block;
+  margin: auto 40px;
+}
+
+#label-pilula-azul {
+  color: blue;
+  display: block;
+  margin: auto 40px;
+}
+
+#escolha {
+  background: url("https://i0.wp.com/agilitrix.com/wp-content/uploads/2011/03/redblue_pill.jpg") no-repeat center;
+  background-size: cover;
+  padding: 20px;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#objetivo {
+  background: url("https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters/large/2800/Trinity.The-Matrix.webp") no-repeat center;
+  background-size: cover;
+  padding: 20px;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+#dropdown {
+  display: none;
+}
+
+#biografia {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  color: white;
+  background-color: green;
+}
+
+#submit {
+  display: block;
+  width: 60%;
+  margin: auto;
+  height: 1.5em;
+  font-size: 1.1em;
+  min-width: 200px;
+  background-color: green;
+  border-radius: 5px;
+}
+
+
+footer {
+  border-radius: 0 0 10px 10px;
+}
+
+footer a {
+  color: #84D857;
+  text-decoration: none;
+}
