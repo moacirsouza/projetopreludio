@@ -92,7 +92,7 @@ Outro curso gratuito de Python que se propõe a ensinar a linguagem em 52 semana
 
 Endereço: [David Bombal: "52 Weeks of Python"](https://courses.davidbombal.com/p/quokka)
 
-### Vídeos de desenvolvimento de jogos e tutoriais em Pyton
+### Vídeos de desenvolvimento de jogos e tutoriais em Python
 
 [Python Platformer Game Tutorial for Beginners](https://www.youtube.com/watch?v=6gLeplbqtqg)
 
