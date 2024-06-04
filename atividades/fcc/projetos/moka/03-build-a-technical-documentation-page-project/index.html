@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+  <head>
+    <title>Fazendo um LED piscar com Arduino</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Fazendo um LED piscar com Arduino</header>
+      <a href="#Material_Requerido" class="nav-link">Material Requerido</a>
+      <a href="#Protoboard" class="nav-link"><em>Protoboard</em></a>
+      <a href="#LED" class="nav-link">LED</a>
+      <a href="#Resistor" class="nav-link">Resistor</a>
+      <a href="#Jumper" class="nav-link"><em>Jumper</em></a>
+      <a href="#Circuitos" class="nav-link">Circuitos</a>
+      <a href="#Montagem" class="nav-link">Montagem</a>
+      <a href="#Codificando_Exemplos" class="nav-link">Codificando Exemplos</a>
+      <a href="#Inspirado_por" class="nav-link">Inspirado por</a>
+    </nav>
+    <main id="main-doc">
+      <section id="Material_Requerido" class="main-section">
+        <header>Material Requerido</header>
+        <article>
+          <p>Os seguintes materiais serão necessários para montarmos o nosso projeto</p>
+          <ul>
+            <li>1 x Placa Arduino Uno R3 com cabo USB</li>
+            <li>1 x <em>Protoboard</em></li>
+            <li>1 x LED vermelho</li>
+            <li>1 x Resistor 220 ohm</li>
+            <li>2 x <em>Jumpers</em> macho-macho</li>
+          </ul>
+        </article>
+      </section>
+      <section id="Protoboard" class="main-section">
+        <header><em>Protoboard</em></header>
+        <article>
+          <p>Peça fundamental em todos os projetos de prototipagem eletrônica, a <em>Protoboard</em> é o local onde os componentes eletrônicos são montados, utilizando trilhas previamente conectadas.</p>
+          <img src="https://www.pjrc.com/store/breadboard.jpg" />
+        </article>
+      </section>
+      <section id="LED" class="main-section">
+        <header>LED</header>
+        <article>
+          <p>O LED (<em>Light Emitting Diode</em>) é um diodo emisor de luz. Uma espécie de mini-lâmpada, de baixo consumo.</p>
+          <p>É importante frisar que ele possui polaridade, exigindo cuidado ao ser incluído em um circuito. Se for ligado incorretamente, será danificado.</p>
+          <img src="https://i.imgur.com/eItKR8X.png" />
+      </section>
+      <section id="Resistor" class="main-section">
+        <header>Resistor</header>
+        <article>
+          <p>O resistor é um componente eletrônico discreto cujo propósito é limitar o fluxo de corrente entre dois pontos de um circuito.</p>
+          <img src="https://www.tutorialspoint.com/basic_electronics/images/resistor.jpg" />
+        </article>
+      </section>
+      <section id="Jumper" class="main-section">
+        <header><em>Jumper</em></header>
+        <article>
+          <p>Os <em>Jumpers</em> são fios, ligações simples, usados para conectar pontos diferentes dos circuitos.</p>
+          <img src="https://live.staticflickr.com/2449/3632886360_6af882096d_b.jpg" />
+        </article>
+      </section>
+      <section id="Circuitos" class="main-section">
+        <header>Circuitos</header>
+        <article>
+          <p>São conjuntos de componentes eletrônicos organizados de forma que o fluxo da corrente percorra o caminho fechado entre o ponto positivo e o negativo da fonte energia.</p>
+          <img src="https://1.bp.blogspot.com/-TPcyCxBdK60/VvaJ3Jo-iDI/AAAAAAAAC0U/d1la-wxTGK8JglLGJVum3sghvu5I3uoBw/s1600/circuito%2Belectrico%2Babierto.png" />
+        </article>
+      </section>
+      <section id="Montagem" class="main-section">
+        <header>Montagem</header>
+        <article>
+          <p>Perceba que o pino 11 está conectado diretamente ao pólo positivo do LED, enquando o GND (terra), passa pelo resistor, em direção ao pólo negativo.</p>
+          <p>Esta configuração é importante, para evitar danificar o equipamento. Como mencionado antes, o LED é um dispositivo com polaridade, de modo que, se os fios estiverem em posição inversa ao da figura, ele vai queimar.</p>
+          <img src="https://i.imgur.com/p3RQSOP.png" />
+        </article>
+      </section>
+      <section id="Codificando_Exemplos" class="main-section">
+        <header>Codificando Exemplos</header>
+        <article>
+          <p>Os códigos a seguir realizam, mais ou menos, a mesma função, <em>i.e.</em>, fazer o LED piscar. Eles foram extraído de diversos <em>sites</em> (referências inclusas), para compor a página.</p>
+Fonte: https://www.makerhero.com/blog/aprenda-a-piscar-um-led-com-arduino/
+          <code>
+// Programa : Pisque um LED
+// Autor : MakerHero
+  
+void setup()
+{
+  //Define a porta do led como saida
+  pinMode(11, OUTPUT);
+}
+  
+void loop()
+{
+  //Acende o led
+  digitalWrite(11, HIGH);
+    
+  //Aguarda intervalo de tempo em milissegundos
+  delay(1000);
+    
+  //Apaga o led
+  digitalWrite(11, LOW);
+    
+  //Aguarda intervalo de tempo em milissegundos
+  delay(1000);
+}Código 01
+</code>
+<code>
+// Fonte: https://www.blogdarobotica.com/2020/09/23/pisca-led-com-arduino-blink/
+// Projeto - Piscar LED
+int ledPin = 9;//Atribui o valor 9 a variável inteira ledPin, que irá representar o pino digital 9
+
+void setup() {
+    pinMode(ledPin, OUTPUT);//Define ledPin (pino 9) como saída
+}
+
+void loop() {
+    digitalWrite(ledPin, HIGH);//Coloca ledPin em nível alto (5V)
+    delay(1000);//Espera 1000 milissegundos (1 segundo)
+    digitalWrite(ledPin, LOW);//Coloca ledPin em nível baixo (0V)
+    delay(1000);//Espera 1000 milissegundos (1 segundo)
+}</code>
+<code>
+// Fonte: https://www.sistemasinterativoscomarduino.net/2020/06/projetos-com-leds.html
+
+/* Projeto: Campainha elétrica sem fio com Xbee
+Autor: Domingos R S Jr
+*/
+
+int botao=8;
+int LEDVermelho=9;
+
+void setup() 
+{
+  // Inicializa os entradas digitais como saídas
+  pinMode(LEDVermelho,OUTPUT);
+  pinMode(botao,OUTPUT);
+}
+
+void loop() 
+{
+ if (digitalRead(botao)==HIGH)
+ {
+  digitalWrite(LEDVermelho, HIGH);
+ }
+ else
+ {
+  digitalWrite(LEDVermelho, LOW);
+  }
+  
+}</code>
+<code>
+// Fonte: https://www.sandroalex.info/roteiros/projetos-arduino/1-piscar-led
+// Projeto 01.b - LED: Piscar LED externo
+//
+// Prof. Sandro Alex
+// https://www.sandroalex.info
+// https://www.youtube.com/sandroalex
+// https://www.instagram.com/sandroalex.info
+// https://www.linkedin.com/in/sandro-alex-ferreira-74b50449
+//
+
+
+void setup(){
+	pinMode(13, OUTPUT);	// definindo pino 13 como saida
+}
+
+void loop(){
+	digitalWrite(13, HIGH);	// colocando nivel 1 no pino 13
+	delay(1000); 			// aguardando por 1 segundo
+	digitalWrite(13, LOW);	// colocando nivel 0 no pino 13
+	delay(1000);			// aguardando por 1 segundo
+}
+</code>
+<hr/>
+<code>
+// Fonte: https://www.instructables.com/LED-BLINKING-USING-ARDUINO-NANO/  
+int led_pin=13;
+
+void setup()
+{
+
+pinMode(led_pin,OUTPUT);
+
+digitalWrite(led_pin,HIGH);
+
+delay(1000);
+
+digitalWrite(led_pin,LOW);
+
+}
+
+void loop()
+
+{
+
+}</code>
+        </article>
+      </section>
+      <section id="Inspirado_por" class="main-section">
+        <header>Inspirado por</header>
+        <article>
+          <p>Este documento foi inspirado no <a href="https://www.makerhero.com/blog/aprenda-a-piscar-um-led-com-arduino/" target="_blank">seguinte artigo</a> da Maker Hero, que também ensina a fazer um LED piscar, usando Arduino e todos os equipamentos listados aqui. Não deixei de visitá-los!</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
