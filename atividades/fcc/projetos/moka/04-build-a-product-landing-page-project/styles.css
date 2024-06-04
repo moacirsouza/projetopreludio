@@ -1,0 +1,203 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+/* INÍCIO: Fonte que a Lemos sugeriu <3 */
+.sansita-bold {
+  font-family: "Sansita", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+/* FIM: Fonte que a Lemos sugeriu <3 */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: sans-serif, Arial;
+}
+
+body {
+  min-width: 535px;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 15px 15px;
+  background-color: lightgray;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  padding: 5px 15px;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  background-color: #ffffff;
+  padding: 10px 50px;
+}
+
+img {
+  height: 50px;
+}
+
+nav {
+  justify-content: center;
+  display: flex;
+  gap: 5px;
+}
+
+.button-style {
+  background-color: salmon;
+  color: black;
+  border-radius: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  box-shadow: 0 5px #666;
+  outline: 0;
+}
+
+.button-style:hover {
+  background-color: yellowgreen;
+}
+
+.button-style:active {
+  color: black;
+  box-shadow: 0 5px #444;
+  transform: translateY(4px);
+}
+
+.price-tag-button {
+  width: 350px;
+  padding: 10px;
+  border: none;
+  /*transition: 0.5s;*/
+}
+
+/*.price-tag-button:hover {
+  width: 350px;
+  transition: 0.5s;
+}*/
+
+.price-tag-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.price-tag-button span:after {
+  content: 'NU!';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.price-tag-button:hover span {
+  padding-right: 220px;
+}
+
+.price-tag-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+nav > a {
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  width: 80px;
+}
+
+#lorem {
+  text-align: center;
+}
+
+input[type="email"] {
+  width: 300px;
+  max-width: 90%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+input[type="submit"] {
+  border: none;
+  padding: 10px;
+  width: 150px;
+}
+
+section {
+  margin-bottom: 20px;
+  padding-top: 90px;
+}
+
+section p {
+  margin: 15px 0;
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+}
+
+.video {
+  max-width: 560px;
+  width: 100%;
+  height: 350px;
+  display: block;
+  margin: 5px auto;
+}
+
+.price-tag {
+  border: 1px solid gray;
+}
+
+table, th, td {
+  text-align: center;
+  border: 1px solid gray;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+table > tbody > tr:nth-child(odd) {
+  background-color: lightgray;
+}
+
+table > tbody > tr > td:nth-child(1) {
+  text-align: left;
+}
+
+table > tbody > tr > td:nth-child(2) {
+  text-align: right;
+}
+
+@media (max-width: 565px) {
+  .header {
+    justify-content: center;
+    align-content: center;
+  }
+
+  section {
+    padding-top: 130px;
+  }
+}
