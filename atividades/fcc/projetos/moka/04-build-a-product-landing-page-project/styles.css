@@ -32,6 +32,7 @@ body {
   gap: 5px;
   padding: 15px 15px;
   background-color: lightgray;
+  z-index: 1;
 }
 
 .image {
@@ -43,11 +44,27 @@ body {
 footer {
   position: sticky;
   bottom: 0;
-  padding: 5px 15px;
+  padding: 15px 15px;
   background-color: lightgray;
   display: flex;
-  justify-content: center;
+  flex-flow: column;
 }
+
+footer > span {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > span:first-child {
+  gap: 10px;
+}
+
+footer > span:first-child > a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
 
 main {
   background-color: #ffffff;
@@ -80,45 +97,8 @@ nav {
 
 .button-style:active {
   color: black;
-  box-shadow: 0 5px #444;
+  box-shadow: 0 5px #222;
   transform: translateY(4px);
-}
-
-.price-tag-button {
-  width: 350px;
-  padding: 10px;
-  border: none;
-  /*transition: 0.5s;*/
-}
-
-/*.price-tag-button:hover {
-  width: 350px;
-  transition: 0.5s;
-}*/
-
-.price-tag-button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.price-tag-button span:after {
-  content: 'NU!';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.price-tag-button:hover span {
-  padding-right: 220px;
-}
-
-.price-tag-button:hover span:after {
-  opacity: 1;
-  right: 0;
 }
 
 nav > a {
@@ -151,7 +131,7 @@ section {
   padding-top: 90px;
 }
 
-section p {
+section p, section div {
   margin: 15px 0;
 }
 
@@ -168,30 +148,101 @@ input {
   margin: 5px auto;
 }
 
+.prices {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 15px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . . .";
+}
+
+.column-01 {
+  grid-column-start: 2;
+}
+
+.column-02 {
+  grid-column-start: 3;
+}
+
+.column-03 {
+  grid-column-start: 4;
+}
+
 .price-tag {
   border: 1px solid gray;
-}
-
-table, th, td {
+  width: 250px;
   text-align: center;
-  border: 1px solid gray;
-  border-collapse: collapse;
-  margin: 10px 0;
 }
 
-table > tbody > tr:nth-child(odd) {
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
   background-color: lightgray;
+  padding: 5px 10px;  
+}
+
+td {
+  padding: 10px;
 }
 
 table > tbody > tr > td:nth-child(1) {
-  text-align: left;
-}
-
-table > tbody > tr > td:nth-child(2) {
   text-align: right;
 }
 
-@media (max-width: 565px) {
+table > tbody > tr > td:nth-child(2) {
+  text-align: left;
+}
+
+.price-tag-button {
+  width: 120px;
+  padding: 5px;
+  border: none;
+  font-size: 25px;
+  margin: 20px;
+}
+
+.price-tag-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.price-tag-button span:after {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.price-tag-button:hover span {
+  padding-right: 70px;
+}
+
+.price-tag-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.price-tag-button-text-01 span:after {
+  content: 'NU!';
+}
+
+.price-tag-button-text-02 span:after {
+  content: 'IXE!';
+}
+
+.price-tag-button-text-03 span:after {
+  content: 'AFF!';
+}
+
+@media (max-width: 620px) {
   .header {
     justify-content: center;
     align-content: center;
@@ -199,5 +250,33 @@ table > tbody > tr > td:nth-child(2) {
 
   section {
     padding-top: 130px;
+  }
+}
+
+@media (max-width: 900px) {
+  .prices {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px 0px;
+    grid-auto-flow: column;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . .";
+  }
+
+  .column-01 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+  }
+
+  .column-02 {
+    grid-row-start: 2;
+    grid-column-start: 2;
+  }
+
+  .column-03 {
+    grid-row-start: 3;
+    grid-column-start: 2;
   }
 }
