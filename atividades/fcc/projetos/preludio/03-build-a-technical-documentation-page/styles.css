@@ -12,6 +12,7 @@
   
   body {
     background-color: #e7e8ca;
+    min-width: 350px;
   }
   
   main{
