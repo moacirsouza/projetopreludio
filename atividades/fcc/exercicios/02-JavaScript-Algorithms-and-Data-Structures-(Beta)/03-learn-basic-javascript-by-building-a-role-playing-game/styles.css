@@ -1,45 +1,89 @@
-body {
-  background-color: #0a0a23;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
+html {
+    font-size: 62.5%;
+} 
+
+body {
+    background-color: #1F1F6F;
+    font-size: 1.5rem;
+}
+
+h1, h2 {
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+div {
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+/*--- Fonts ---*/
+.jaini-purva-regular {
+    font-family: "Jaini Purva", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.yatra-one-regular {
+    font-family: "Yatra One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+/*--- Fonts ---*/
+
 #text {
-  background-color: #0a0a23;
-  color: #ffffff;
-  padding: 10px;
+    background-color: #0a0a23;
+    color: #ffffff;
+    padding: 10px;
 }
 
 #game {
-  max-width: 500px;
-  max-height: 400px;
-  background-color: #ffffff;
-  color: #ffffff;
-  margin: 30px auto 0px;
-  padding: 10px;
+    max-width: 500px;
+    max-height: 400px;
+    background-color: #ffffff;
+    color: #ffffff;
+    margin: 10px auto 0px;
+    padding: 10px;
 }
 
 #controls,
 #stats {
-  border: 1px solid #0a0a23;
-  padding: 5px;
-  color: #0a0a23;
+    border: 1px solid #0a0a23;
+    padding: 5px;
+    color: #0a0a23;
 }
 
 #monsterStats {
-  display: none;
-  border: 1px solid #0a0a23;
-  padding: 5px;
-  color: #ffffff;
-  background-color: #c70d0d;
+    display: none;
+    border: 1px solid #0a0a23;
+    padding: 5px;
+    color: #ffffff;
+    background-color: #c70d0d;
 }
 
 .stat {
-  padding-right: 10px;
+    padding-right: 10px;
 }
 
 button {
-  cursor: pointer;
-  color: #0a0a23;
-  background-color: #feac32;
-  background-image: linear-gradient(#fecc4c, #ffac33);
-  border: 3px solid #feac32;
+    cursor: pointer;
+    color: #0a0a23;
+    background-color: #feac32;
+    background-image: linear-gradient(#fecc4c, #ffac33);
+    border: 3px solid #feac32;
+    padding: 2px;
 }
