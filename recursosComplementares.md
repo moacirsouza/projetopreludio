@@ -269,3 +269,9 @@ Endereço: [Flexbox Froggy](https://flexboxfroggy.com/)
 Um jogo onde você cultiva seu jardim de cenouras escrevendo códigos em CSS! Regue apenas as áreas que têm cenouras usando a propriedade Grid.
 
 Endereço: [Grid Garden](https://cssgridgarden.com/)
+
+## Ideias para projetinhos
+
+Este repositório contém uma coleção de guias passo a passo para desenvolver diferentes projetos em várias linguagens de programação.
+
+Endereço: [Build your own](https://github.com/codecrafters-io/build-your-own-x)
