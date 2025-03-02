@@ -12,7 +12,7 @@ Sinta-se à vontade para dar um pulinho no canal, bater um papo e estudar com a 
 
 ## Motivação
 
-Nossa ideia é estudar desenvolvimento de sistemas usando o [Free Code Camp](https://freecodecamp.org) (FCC) como principal referência acadêmica.
+Nossa ideia é estudar desenvolvimento de sistemas usando o [free Code Camp](https://freecodecamp.org) (FCC) como principal referência acadêmica.
 
 Além de ser um projeto 100% gratuito (**Sério!**), com suporte completo ao auto-estudo, através de um currículo moderno e recheado de atividades que simulam a experiência real de um desenvolvedor da área, o FCC também emite certificados verificados e amplamente aceitos no mercado de trabalho. Aliás, os certificados **TAMBÉM** são gratuitos!
 
@@ -24,11 +24,11 @@ Não apenas é possível construir uma carreira a partir das lições e diversos
 
 ## Recursos
 
-### Free Code Camp (FCC)
+### free Code Camp (FCC)
 
 Como dito antes, este é o nosso currículo principal. Vamos começar com _Responsive Web Design_ e concluir todas as atividades que pudermos!
 
-Endereço: [Free Code Camp](https://freecodecamp.org)
+Endereço: [free Code Camp](https://freecodecamp.org)
 
 ### W3 Schools
 
