@@ -2,7 +2,13 @@
 
 Sugestões, dicas e recursos diversos, tratados durante as conversas das transmissões do Projeto Prelúdio, de autoria de Moacir Souza (a.k.a. Moka) e Ailton (a.k.a. Prelúdio).
 
-## CSS
+## HTML e CSS
+
+### HTML Code Generator
+
+HTML Code Generator é uma ferramenta online gratuita que gera automaticamente códigos HTML, CSS, JavaScript e jQuery com apenas um clique, permitindo que você copie e cole diretamente em seu site sem precisar digitar manualmente. Além disso, oferece diversos recursos úteis para desenvolvimento web, como editores HTML, geradores de CSS e JavaScript, simplificando e acelerando a criação de páginas e elementos web.
+
+Endereço: [HTML Code Generator](https://www.html-code-generator.com/)
 
 ### CSS-Tricks
 
