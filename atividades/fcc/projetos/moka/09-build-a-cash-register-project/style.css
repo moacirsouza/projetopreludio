@@ -1,0 +1,494 @@
+:root {
+  --case-color: #66332B;
+  --stroke-color: #000000;
+  --stroke-width: 0.3rem;
+  /* --bordinha: 0.01rem; */
+  --bordinha: 0rem;
+}
+
+/*
+  LEMBRETE:
+
+  01. Usar o seguinte efeito para apresentar as mensagens dos balões de texto: https://youtube.com/shorts/fTOcWMD_5pk?si=VtZVdAH7PnBiuGiJ&utm_source=ZTQxO
+  
+  02. Gerador de balão de fala: https://www.html-code-generator.com/css/speech-bubble-generator
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /*
+    This is a "trick" to make every font size
+    a multiple of 10px instead of 16px
+  */
+  font-size: 62.5%;
+  color: white;
+}
+
+body {
+  background-color: grey;
+  display: grid;
+  height: 100vh;
+  place-items: center;  
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#cash-register-section {
+  position: relative;
+  width: 40rem;
+  height: 31rem;
+  border: var(--bordinha) solid white;
+}
+
+.svg-container {
+  position: absolute;
+}
+
+.svg-element {
+  stroke: var(--stroke-color);
+  stroke-width: var(--stroke-width);
+  stroke-linejoin: round;
+}
+
+#cash-register {
+  bottom: 0rem;
+  left: 2.5rem;
+}
+
+#cash-register > .svg-element {
+  width: 35rem;
+  height: 30rem;
+  border: var(--bordinha) solid red;
+}
+
+#cash-register > .svg-element > path:nth-child(1) {
+  fill: var(--case-color);
+}
+
+#cash-register > .svg-element > path:nth-child(2) {
+  fill: #E8CC90;
+}
+
+#cash-register > .svg-element > circle {
+  fill: #ABABAB;
+}
+
+#price-flags01 {
+  left: 11rem;
+  top: 10.4rem;
+  z-index: -1;
+  animation-name: flag01-animation;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes flag01-animation {
+  100% {
+    top: 3.5rem;
+  }
+}
+
+#price-flags01 > .svg-element {
+  width: 1.65rem;
+  height: 6.9rem;
+  border: var(--bordinha) solid darkgreen;
+}
+
+#price-flags02 {
+  left: 15rem;
+  top: 16.9rem;
+  z-index: -1;
+  animation-name: flag02-animation;
+  animation-delay: 1s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;  
+}
+
+@keyframes flag02-animation {
+  100% {
+    top: 10rem;
+  }
+}
+
+#price-flags02 > .svg-element {
+  width: 1.65rem;
+  height: 6.9rem;
+  border: var(--bordinha) solid orange;
+}
+
+#key01, #key02, #key03 {
+  rotate: 45deg;
+  z-index: -1;
+  --stroke-width: 0.4rem;
+}
+
+#key01 {
+  top: 15rem;
+  left: 17.7rem;
+  animation-name: key01-animation;
+  animation-duration: 0.3s;
+}
+
+@keyframes key01-animation {
+  0%   {
+    top: 15rem;
+    left: 17.7rem;
+  }
+  25%  {
+    top: 15.1rem;
+    left: 17.6rem;
+  }
+  50%  {
+    top: 15.2rem;
+    left: 17.5rem;
+  }
+  75%  {
+    top: 15.3rem;
+    left: 17.4rem;
+  }
+  100% {
+    top: 15.4rem;
+    left: 17.3rem;
+  }
+}
+
+#key02 {
+  top: 17rem;
+  left: 19.7rem;
+  animation-name: key02-animation;
+  animation-delay: 0.8s;
+  animation-duration: 0.3s;
+}
+
+@keyframes key02-animation {
+  0%   {
+    top: 17rem;
+    left: 19.7rem;
+  }
+  25%  {
+    top: 17.1rem;
+    left: 19.6rem;
+  }
+  50%  {
+    top: 17.2rem;
+    left: 19.5rem;
+  }
+  75%  {
+    top: 17.3rem;
+    left: 19.4rem;
+  }
+  100% {
+    top: 17.4rem;
+    left: 19.3rem;
+  }
+}
+
+#key03 {
+  top: 19rem;
+  left: 21.7rem;
+  animation-name: key03-animation;
+  animation-delay: 0.5s;
+  animation-duration: 0.3s;
+}
+
+@keyframes key03-animation {
+  0%   {
+    top: 19rem;
+    left: 21.7rem;
+  }
+  25%  {
+    top: 19.1rem;
+    left: 21.6rem;
+  }
+  50%  {
+    top: 19.2rem;
+    left: 21.5rem;
+  }
+  75%  {
+    top: 19.3rem;
+    left: 21.4rem;
+  }
+  100% {
+    top: 19.4rem;
+    left: 21.3rem;
+  }
+}
+
+#key01, #key02, #key03 > .svg-element {
+  width: 2rem;
+  height: 3rem;
+  border: var(--bordinha) solid magenta;
+}
+
+#profile-cash-drawer {
+  bottom: 0.7rem;
+  left: 20rem;
+  z-index: -1;
+  animation-name: cash-drawer-animation;
+  animation-delay: 1.3s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+#profile-cash-drawer > .svg-element {
+  width: 10rem;
+  height: 6.5rem;
+  border: var(--bordinha) solid yellow;
+}
+
+@keyframes cash-drawer-animation {
+  0%    {
+    left: 20rem;
+  }
+  50%   {
+    left: 28rem;
+  }
+  100%  {
+    left: 27rem;
+  }
+}
+
+#crank {
+  top: 8.5rem;
+  left: 13rem;
+  animation-name: gira;
+  animation-duration: 2s;
+  transform: rotate(180deg);
+}
+
+#crank > .svg-element {
+  /* fill: red; */
+}
+
+#crank > .svg-element > line {
+  stroke-width: 0.2rem;
+}
+
+@keyframes gira {
+  0% { 
+    transform: rotate(-180deg);
+  }
+}
+
+#crank > .svg-element {
+  width: 4.5rem;
+  height: 20rem;
+  border: var(--bordinha) solid blue;
+}
+
+/* section{
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+  gap: 20px;
+}
+
+div{
+  width: 400px;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+#priceDisplay{
+  text-align: center;
+  border: unset;
+}
+
+#button-div{
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  border: unset;
+} */
+
+#drawer-section {
+  position: relative;
+  width: 40rem;
+  height: 23rem;
+  border: var(--bordinha) solid yellow;
+  animation: diag;
+}
+
+#drawer > .svg-element {
+  width: 40rem;
+  height: 25rem;
+}
+
+.base-speech-bubble {
+  position: absolute;
+  background-color: black;  
+  box-shadow: 0.2rem 0.2rem 0.1rem 0 rgba(163, 163, 163, 0.9);
+  /* width: fit-content; */
+  border-radius: 0.7rem;
+  padding: 0.8rem;
+}
+
+.base-speech-bubble:after {
+  content: '';
+  position: absolute;
+  display: block;
+  border-style: solid;
+  width: 0;
+  /* z-index: -10; */
+}
+
+#message {  /* Mensagem */
+  left: 11rem;
+  top: -1rem;
+}
+
+#message:after {
+  border-width: 0 0 2rem 1rem;
+  bottom: -2rem;
+  left: 1rem;
+  border-color: transparent transparent transparent #000000;
+}
+
+#change-due { /* Troco */
+  left: 20rem;
+  top: 4rem;
+}
+
+#change-due:after {
+  border-width: 0 0 1.2rem 3rem;  
+  top: 7rem;
+  left: -3rem;
+  border-color: transparent transparent #000000 transparent;
+}
+
+#cashRegister { /* Caixa */
+  left: 0rem;
+  /* top: 0rem; */
+}
+
+.change-bubble {
+  background-color: #00643e;
+  text-align: center;
+  z-index: 1;
+  width: 7rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.change-bubble:after {
+  border-width: 0 0 2rem 1.2rem;
+  border-color: transparent transparent transparent #00643e;
+  bottom: -1.5rem;
+  left: 3.3rem;
+}
+
+#change-bubble01 {
+  top: 0.8rem;
+  left: 19rem;
+}
+
+#change-bubble02 {
+  top: 3.8rem;
+  left: 24.9rem;
+}
+
+#change-bubble03 {
+  top: 6.8rem;
+  left: 30.8rem;
+}
+
+#change-bubble04 {
+  top: 3.8rem;
+  left: 11.8rem;
+}
+
+#change-bubble05 {
+  top: 6.8rem;
+  left: 17.7rem;
+}
+
+#change-bubble06 {
+  top: 9.8rem;
+  left: 23.6rem;
+}
+
+#change-bubble07 {
+  top: 6.8rem;
+  left: 4.6rem;
+}
+
+#change-bubble08 {
+  top: 9.8rem;
+  left: 10.5rem;
+}
+
+#change-bubble09 {
+  top: 12.8rem;
+  left: 16.3rem;
+}
+
+/* #change-bubble01:after {
+  bottom: -2rem;
+  left: 3rem;
+} */
+
+/* #cashRegister:after {
+  border-width: 2rem 1.2rem 0 0;
+  bottom: -2rem;
+  left: 6rem;
+  border-color: #000000 transparent transparent transparent;
+} */
+
+/* table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+
+tbody {
+  white-space: nowrap;
+}
+
+td {
+  padding: 0.5rem;
+  border: 1px solid white;
+} */
+
+#anotherSection {
+  width: 40rem;
+  border: var(--bordinha) solid salmon;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#treco-azul {
+  z-index: 1;
+}
+
+#treco-azul > .svg-element {
+  width: 40rem;
+  height: 25rem;
+}
+
+.pop-up {
+  animation: pop;
+  animation-duration: 1s;
+}
+
+
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
