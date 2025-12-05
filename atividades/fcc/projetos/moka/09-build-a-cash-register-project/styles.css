@@ -1,8 +1,10 @@
 :root {
-  --case-color: #66332B;
+  --case-color: #44362F;
   --stroke-color: #000000;
   --stroke-width: 0.3rem;
-  /* --bordinha: 0.01rem; */
+  /*
+  --bordinha: 0.01rem;
+  */
   --bordinha: 0rem;
 }
 
@@ -75,7 +77,7 @@ main {
 }
 
 #cash-register > .svg-element > path:nth-child(2) {
-  fill: #E8CC90;
+  fill: #d2b48c;
 }
 
 #cash-register > .svg-element > circle {
@@ -285,37 +287,12 @@ main {
   border: var(--bordinha) solid blue;
 }
 
-/* section{
-  display: flex;
-  justify-content: center;
-  margin: 5px 0;
-  gap: 20px;
-}
-
-div{
-  width: 400px;
-  border: 1px solid black;
-  padding: 5px;
-}
-
-#priceDisplay{
-  text-align: center;
-  border: unset;
-}
-
-#button-div{
-  width: 300px;
-  margin: 0 auto;
-  text-align: center;
-  border: unset;
-} */
-
 #drawer-section {
   position: relative;
   width: 40rem;
   height: 23rem;
-  border: var(--bordinha) solid yellow;
   animation: diag;
+  border: var(--bordinha) solid yellow;
 }
 
 #drawer > .svg-element {
@@ -324,12 +301,14 @@ div{
 }
 
 .base-speech-bubble {
+  font-size: 1.1rem;
   position: absolute;
-  background-color: black;  
-  box-shadow: 0.2rem 0.2rem 0.1rem 0 rgba(163, 163, 163, 0.9);
+  background-color: #efdecd;  
+  box-shadow: 0.3rem 0.3rem 0.1rem 0 rgba(61, 43, 31, 1);
   /* width: fit-content; */
   border-radius: 0.7rem;
   padding: 0.8rem;
+  font-weight: 600;
 }
 
 .base-speech-bubble:after {
@@ -342,27 +321,31 @@ div{
 }
 
 #message {  /* Mensagem */
+  box-shadow: 0.5rem 0.5rem 0.1rem 0 rgba(61, 43, 31, 1);
+  color: #1a1110;
   left: 11rem;
   top: -1rem;
 }
 
 #message:after {
   border-width: 0 0 2rem 1rem;
-  bottom: -2rem;
+  bottom: -1.7rem;
   left: 1rem;
-  border-color: transparent transparent transparent #000000;
+  border-color: transparent transparent transparent #efdecd;
 }
 
 #change-due { /* Troco */
+  box-shadow: 0.5rem 0.5rem 0.1rem 0 rgba(61, 43, 31, 1);
+  color: #1a1110;
   left: 20rem;
-  top: 4rem;
+  top: 4.4rem;
 }
 
 #change-due:after {
   border-width: 0 0 1.2rem 3rem;  
   top: 7rem;
   left: -3rem;
-  border-color: transparent transparent #000000 transparent;
+  border-color: transparent transparent #efdecd transparent;
 }
 
 #cashRegister { /* Caixa */
@@ -375,8 +358,6 @@ div{
   text-align: center;
   z-index: 1;
   width: 7rem;
-  font-size: 1.1rem;
-  font-weight: 600;
 }
 
 .change-bubble:after {
@@ -431,33 +412,6 @@ div{
   left: 16.3rem;
 }
 
-/* #change-bubble01:after {
-  bottom: -2rem;
-  left: 3rem;
-} */
-
-/* #cashRegister:after {
-  border-width: 2rem 1.2rem 0 0;
-  bottom: -2rem;
-  left: 6rem;
-  border-color: #000000 transparent transparent transparent;
-} */
-
-/* table {
-  border-collapse: collapse;
-  table-layout: fixed;
-  width: 100%;
-}
-
-tbody {
-  white-space: nowrap;
-}
-
-td {
-  padding: 0.5rem;
-  border: 1px solid white;
-} */
-
 #anotherSection {
   width: 40rem;
   border: var(--bordinha) solid salmon;
@@ -466,11 +420,11 @@ td {
   flex-direction: column;
 }
 
-#treco-azul {
+#lateral-direita-da-gaveta {
   z-index: 1;
 }
 
-#treco-azul > .svg-element {
+#lateral-direita-da-gaveta > .svg-element {
   width: 40rem;
   height: 25rem;
 }
@@ -479,7 +433,6 @@ td {
   animation: pop;
   animation-duration: 1s;
 }
-
 
 @keyframes pop {
   from {

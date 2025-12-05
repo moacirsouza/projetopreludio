@@ -16,7 +16,7 @@ const cashInput = document.getElementById("cash");
 const button = document.getElementById("purchase-btn");
 const changeDue = document.getElementById("change-due");
 const priceDisplay = document.getElementById("price-display");
-const drawerDisplay = document.getElementById("drawer-display");
+const drawerDisplay = document.getElementById("drawer");
 
 priceDisplay.innerHTML = `<strong>PRICE:</strong> ${price}`;
 
@@ -131,6 +131,7 @@ const changeCalculator = (itemPrice, cidValue, givenCash) => {
   cid = cidInteger.map(e => [e[0], currencyConverter(e[1], 1)]).toReversed();
 // 1. título - E o colspan? Não pode ser sempre 3!
 // 2. quantidade de 
+/*
 let cidTable = "<table><tr><th colspan=3>Drawer</th><tr>";
 
 cid.forEach((e, i) => {
@@ -143,8 +144,8 @@ cid.forEach((e, i) => {
 });
 
 cidTable += "</tr></table>";
-
 drawerDisplay.innerHTML = cidTable;
+*/
 
 // Versão antiga do Register Display
   // drawerDisplay.innerHTML = `<strong>Change in Drawer: </strong>
