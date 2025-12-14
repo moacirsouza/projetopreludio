@@ -32,7 +32,7 @@ html {
 }
 
 body {
-  background-color: grey;
+  background-color: rebeccapurple;
   display: grid;
   height: 100vh;
   place-items: center;  
