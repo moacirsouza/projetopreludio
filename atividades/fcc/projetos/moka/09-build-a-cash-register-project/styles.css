@@ -2,10 +2,10 @@
   --case-color: #44362F;
   --stroke-color: #000000;
   --stroke-width: 0.3rem;
-  /*
   --bordinha: 0.01rem;
-  */
+  /*
   --bordinha: 0rem;
+  */
 }
 
 /*
@@ -42,6 +42,12 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+#price-display {
+  font-size: 2rem;
+  position: absolute;
+  top: -5rem;
 }
 
 #cash-register-section {
@@ -320,7 +326,7 @@ main {
   /* z-index: -10; */
 }
 
-#message {  /* Mensagem */
+#message {
   box-shadow: 0.5rem 0.5rem 0.1rem 0 rgba(61, 43, 31, 1);
   color: #1a1110;
   left: 11rem;
@@ -334,16 +340,17 @@ main {
   border-color: transparent transparent transparent #efdecd;
 }
 
-#change-due { /* Troco */
+#change-due {
   box-shadow: 0.5rem 0.5rem 0.1rem 0 rgba(61, 43, 31, 1);
   color: #1a1110;
   left: 20rem;
-  top: 4.4rem;
+  bottom: 16rem;
 }
 
 #change-due:after {
+  position: absolute;
   border-width: 0 0 1.2rem 3rem;  
-  top: 7rem;
+  bottom: 1rem;
   left: -3rem;
   border-color: transparent transparent #efdecd transparent;
 }
