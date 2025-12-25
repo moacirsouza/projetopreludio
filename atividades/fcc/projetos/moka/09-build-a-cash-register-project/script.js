@@ -1,5 +1,5 @@
-let price = 5.00;
-//let price = 3.26;
+//let price = 5.00;
+let price = 3.26;
 
 let cid = [
   ['PENNY', 1.01],
@@ -12,7 +12,6 @@ let cid = [
   ['TWENTY', 60],
   ['ONE HUNDRED', 100]
 ];
-
 
 // Variables related to the various HTML elements
 const cashInput = document.getElementById("cash");
@@ -185,6 +184,9 @@ drawerDisplay.innerHTML = cidTable;
 
   changeDue.innerHTML = `Status: ${status}<br />
                          ${result.map( item => item.join(': $') ).join('<br>') }`;
+
+  drawerDisplay.innerHTML = `<strong>Change in Drawer: </strong>
+                                <br />${cid.map(item => item.join(': $')).join("<br />")}`;
 
 };
 
