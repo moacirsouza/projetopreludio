@@ -90,43 +90,49 @@ Curso de linguagem JavaScript, voltado para iniciantes e para quem quiser aprend
 
 Endereço: [Curso de Javascript (40 Horas)](https://www.cursoemvideo.com/curso/javascript/)
 
-### Artigos
+### JavaScript30
 
-#### var, let e const – Qual é a diferença?
+JavaScript puro, 30 dias, 30 projetos: sem frameworks, compiladores, bibliotecas ou código repetitivo.
 
-Artigo do [freeCodeCamp](https://www.freecodecamp.org/) que mostra a diferença entre var, let e const.
+Endereço: [JavaScript30](https://javascript30.com/)
 
-Endereço: [var, let e const – Qual é a diferença?](https://www.freecodecamp.org/portuguese/news/var-let-e-const-qual-e-a-diferenca/)
+### The Modern JavaScript Tutorial
 
-#### Referência prática do operador ternário condicional em JavaScript
+Aprenda JavaScript do básico a tópicos avançados com explicações e exemplos simples, mas detalhados. O tutorial abrange a linguagem em si, o ambiente do navegador e artigos adicionais sobre vários tópicos.
 
-Neste artigo são mostradas diferentes formas de se fazer um if/else.
+Endereço: [The Modern JavaScript Tutorial](https://javascript.info)
 
-Endereço: [Referência prática do operador ternário condicional em JavaScript](http://devfuria.com.br/javascript/operador-condicional-ternario/)
+## Web.dev
 
-#### Operador de Módulo(%) em JavaScript
+A plataforma web é um ecossistema em constante evolução de recursos e APIs do navegador, disponibilizados para que desenvolvedores criem sites fáceis e agradáveis de usar.
 
-Este tutorial ensina como usar o operador de módulo % em JavaScript.
+Endereço: [Web.dev](https://web.dev)
 
-Endereço: [Operador de Módulo(%) em JavaScript](https://www.delftstack.com/pt/howto/javascript/javascript-modulo/)
+## Sites com imagens e ícones gratuitos
 
-#### JavaScript === vs ==
+### Pexels
 
-Este tutorial explica o tópico mais confuso entre os operadores de comparação e ensina quando usar qual operador é igual (== ou ===).
+Fotos e vídeos de stock gratuitos que você pode usar em qualquer lugar. Explore milhões de imagens de stock livres de royalties e fotos sem direitos autorais, todas de alta qualidade. Nenhuma atribuição é necessária.
 
-Endereço:[JavaScript === vs ==](https://www.delftstack.com/pt/howto/javascript/javascript-vs-/)
+Endereço: [Pexels](https://www.pexels.com)
 
-#### Entendendo funções callback em JavaScript
+### Unsplash
 
-O intuito desse texto é explicar de forma passo a passo o que são funções callback e sua sintaxe de uso.
+Imagens e fotos lindas e gratuitas que você pode baixar e usar em qualquer projeto. Melhor do que qualquer foto de banco de imagens ou livre de royalties.
 
-Endereço: [Entendendo funções callback em JavaScript](https://medium.com/totvsdevelopers/entendendo-fun%C3%A7%C3%B5es-callback-em-javascript-7b500dc7fa22)
+Endereço:[Unsplash](https://unsplash.com)
 
-#### Entendendo as funções map, filter e reduce
+### Icon Archive
 
-Neste artigo vemos alguns usos básicos dos métodos Map, Filter e Reduce. 
+O Icon Archive oferece mais de 800.000 ícones gratuitos em vários formatos e categorias. Navegue, baixe e compartilhe ícones através das buscas populares, adições mais recentes ou seleção aleatória.
 
-Endereço: [Entendendo as funções map, filter e reduce](https://medium.com/luizalabs/entendendo-as-fun%C3%A7%C3%B5es-map-filter-e-reduce-2569888ae084)
+Endereço: [Icon Archive](https://www.iconarchive.com/)
+
+### Flaticon
+
+Flaticon é o maior banco de ícones gratuitos para qualquer projeto. Baixe ícones em PNG, SVG, EPS, PSD e CSS, edite a cor, o tamanho e o estilo, e use-os em seus sites, aplicativos ou documentos.
+
+Endereço: [Flaticon](https://www.flaticon.com/)
 
 ## Git
 
@@ -141,6 +147,12 @@ Endereço: [Atlassian](https://www.atlassian.com/git)
 GIT PURR! são anotações e rabiscos feitos pela engenheira de front-end Tomomi Imura, onde ela mostra de forma criativa e fofa como aprendeu Git.
 
 Endereço: [GIT PURR!](https://girliemac.com/blog/2017/12/26/git-purr/)
+
+### Git Tutorial W3Schools
+
+Tutorial completo de GIT com guias de instalação, configuração, comandos e exercícios.
+
+Endereço: [Git Tutorial](https://www.w3schools.com/git/default.asp)
 
 ## Python
 
@@ -162,47 +174,37 @@ Real Python é uma plataforma de aprendizado online que ensina indivíduos e emp
 
 Endereço: [Real Python](https://realpython.com/)
 
-### Vídeos de desenvolvimento de jogos e tutoriais em Python
+### Python Institute
 
-#### Desenvolvimento de joguinhos
+Iniciativa sem fins lucrativos da OpenEDG, que promove o aprendizado de Python e o crescimento de carreiras em todo o mundo. Impulsionados por parcerias com escolas, universidades e instituições, desenvolvemos currículos, ferramentas, certificações e avaliações sob medida para unir a educação e a indústria.
 
-[Python Platformer Game Tutorial for Beginners](https://www.youtube.com/watch?v=6gLeplbqtqg)
+Endereço: [Python Institute](https://pythoninstitute.org)
 
-[Python Game Tutorial: Pong](https://www.youtube.com/watch?v=C6jJg9Zan7w)
+### FastAPI
 
-[Stardew Valley Game Clone with Python and Pygame – Full Course](https://www.youtube.com/watch?v=R9apl6B_ZgI)
+Intenção neste curso é facilitar o aprendizado no desenvolvimento de APIs usando o FastAPI. Explorar como integrar bancos de dados, criar testes e um sistema básico de autenticação com JWT. Tudo isso para oferecer uma boa base para quem quer trabalhar com desenvolvimento web com Python. A ideia desse curso é apresentar os conceitos de forma prática, construindo um projeto do zero e indo até a sua fase de produção.
 
-[Kivy Course - Create Python Games and Mobile Apps](https://www.youtube.com/watch?v=l8Imtec4ReQ)
+Endereço: [FastAPI](https://fastapidozero.dunossauro.com/estavel/)
 
-[Python Game Development Project Using OOP – Minesweeper Tutorial (w/ Tkinter)](https://www.youtube.com/watch?v=OqbGRZx4xUc)
+## C Programing
 
-[Python Online Multiplayer Game Development Tutorial](https://www.youtube.com/watch?v=McoDjOCb2Zo)
+### Beej's Guide to C Programming
 
-[Code a Snake Game with Python and Pygame 🐍 - Tutorial](https://www.youtube.com/watch?v=8dfePlONtls)
+Este é o primeiro volume do Beej's Guide to C, o tutorial.
 
-[Pygame Tutorial for Beginners - Python Game Development Course](https://www.youtube.com/watch?v=FfWpgLFMI7w)
+Endereço: [Beej's Guide](https://beej.us/guide/bgc/html/split/)
 
-[Connect Four Python Game Tutorial with pygame](https://www.youtube.com/watch?v=XpYz-q1lxu8)
+## The Odin Project
 
-[Learn Python by Building Five Games - Full Course](https://www.youtube.com/watch?v=XGf2GcyHPhc)
+Currículo de desenvolvimento full stack gratuito e apoiado por uma comunidade de código aberto dedicada.
 
-[Python & PyGame Tutorial – Code a Duck Hunt Game](https://www.youtube.com/watch?v=T2pd3KRSoHI)
+Endereço: [The Odin Project](https://www.theodinproject.com/)
 
-[Pong with Python & Pygame – Tutorial](https://www.youtube.com/watch?v=tS8F7_X2qB0)
+## Operating Systems: Three Easy Pieces
 
-[ Snake Game Python Tutorial ](https://www.youtube.com/watch?v=CD4qAhfFuLo)
+Um livro online gratuito sobre sistemas operacionais! O livro é estruturado em torno de três conceitos fundamentais para os sistemas operacionais: virtualização, concorrência e persistência. Ao compreender a teoria, você também aprenderá a prática, incluindo como um sistema operacional faz coisas como escalonar a CPU, gerenciar memória e armazenar arquivos de forma persistente.
 
-#### Tutoriais e cursos para iniciantes
-
-[Python for Beginners – Full Course (Programming Tutorial)](https://www.youtube.com/watch?v=eWRfhZUzrAc)
-
-[Learn Python - Full Course for Beginners (Tutorial)](https://www.youtube.com/watch?v=rfscVS0vtbw)
-
-[ 20 Beginner Python Projects ](https://www.youtube.com/watch?v=pdy3nh1tn6I)
-
-[12 Beginner Python Projects - Coding Course](https://www.youtube.com/watch?v=8ext9G7xspg)
-
-[Python Tutorial for Beginners (with mini-projects)](https://www.youtube.com/watch?v=qwAFL1597eM)
+Endereço: [Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 
 ## Developer Roadmaps
 
@@ -210,19 +212,25 @@ O roadmap.sh é um esforço comunitário para criar roteiros, guias e outros con
 
 Endereço: [Developer Roadmaps](https://roadmap.sh/)
 
-### Frontend Developer
+## Pluralsight
 
-Guia Frontend.
+A Pluralsight ajuda organizações, equipes e indivíduos a criarem produtos melhores com cursos online e insights baseados em dados que impulsionam o desenvolvimento de habilidades e aprimoram processos.
 
-Endereço: [Frontend](https://roadmap.sh/frontend)
+Endereço: [Pluralsight](https://www.pluralsight.com)
 
-### Backend Developer
+## Teach Yourself Computer Science
 
-Guia Backend.
+Aprenda ciência da computação sem um programa de graduação com este guia abrangente. Ele cobre nove áreas de estudo, livros, vídeos e explica por que elas são importantes para a sua carreira.
 
-Endereço: [Backend](https://roadmap.sh/backend)
+Endereço: [Teach Yourself Computer Science](https://teachyourselfcs.com/)
 
-## Sites para treinamento
+## Isaac Computer Science
+
+Plataforma de aprendizagem para estudantes e professores do GCSE e A level.
+
+Endereço: [Isaac Computer Science](https://isaaccomputerscience.org/)
+
+## Sites com exercícios
 
 ### Exercism
 
@@ -262,7 +270,7 @@ Dicas e tutoriais de Git.
 
 Endereço: [Philomatics](https://www.youtube.com/@philomatics/videos)
 
-## Joguinhos para aprender brincando
+## Joguinhos de programação
 
 ### Flexbox Froggy
 
@@ -276,8 +284,46 @@ Um jogo onde você cultiva seu jardim de cenouras escrevendo códigos em CSS! Re
 
 Endereço: [Grid Garden](https://cssgridgarden.com/)
 
-## Ideias para projetinhos
+### Blockly Games
+
+Jogos para os programadores de amanhã. Aulas de programação baseada em blocos para iniciantes.
+
+Endereço: [Blockly Games](https://blockly.games)
+
+## Ideias para projetos
 
 Este repositório contém uma coleção de guias passo a passo para desenvolver diferentes projetos em várias linguagens de programação.
 
 Endereço: [Build your own](https://github.com/codecrafters-io/build-your-own-x)
+
+## Ferramentas
+
+### Excalidraw
+
+O Excalidraw é uma ferramenta de quadro branco virtual colaborativo que permite que você desenhe diagramas com facilidade, dando a eles uma aparência de desenho à mão livre.
+
+Endereço: [Excalidraw](https://excalidraw.com/)
+
+### Desmos
+
+Explore a matemática com uma bela calculadora gráfica online e gratuita. Faça gráficos de funções, plote pontos, visualize equações algébricas, adicione controles deslizantes, anime gráficos e muito mais.
+
+Endereço: [Desmos](https://www.desmos.com/?lang=en)
+
+### Favicon io
+
+Gere rapidamente seu favicon a partir de texto, imagem, ou escolha entre centenas de emojis. Se você já tem uma imagem ou logo que deseja usar como favicon, use esta ferramenta para converter sua imagem para o formato adequado de favicon.
+
+Endereço: [Favicon io](https://favicon.io/)
+
+### Coolors
+
+O Coolors é o gerador de paletas de cores ultrarrápido e superintuitivo para designers, criadores e qualquer pessoa em busca de harmonia visual. Gere paletas lindas instantaneamente apertando a barra de espaço, ou explore milhões das mais populares.
+
+Endereço: [Coolors](https://coolors.co/)
+
+### Paletton
+
+O Paletton não é apenas uma ferramenta para profissionais; foi criado para ajudar em todos os tipos de projetos de cores, desde trabalhos profissionais até os projetos escolares dos seus filhos.
+
+Endereço: [Paletton](https://paletton.com)
