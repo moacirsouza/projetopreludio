@@ -33,35 +33,62 @@ const monetaryUnits = [ 10000, 2000, 1000, 500, 100, 25, 10, 5, 1 ]
  * console.log(currencyConverter('a', 0)) // Expected output: NaN
  * console.log(currencyConverter('a', 1)) // Expected output: NaN
  */
-const currencyConverter = (number, outputDisplay) => {
+const currencyConverter = (inputValue, outputDisplay) => {
    
-  const convertedResult = number
-                          .toString()
-                          .split('.')
-                          .map((e, i) => i===0?e:`0.${e}`)
-                          .reduce((accumulator, currentValue) =>
-                                   parseInt(accumulator)
-                                   + parseFloat(currentValue)*100, 0);
+  let currencyArray = inputValue
+                      .toString()
+                      .replace(',', '.')
+                      .split('.')
+                      .map( e => e.replace(/[^0-9]/gi,'') )
+                      .map( e => parseInt(e) );
 
+  console.log("Antes")
+  console.log(currencyArray);
+  console.log(currencyArray.length);
 
-  //console.log(`Converti ${number} para ${convertedResult}`);
-  let convertedOutput = undefined;
-
-  if(outputDisplay === 0){
-    convertedOutput = convertedResult;
-  }else if(outputDisplay === 1){
-    convertedOutput = convertedResult/10000;
+  // Number validations
+  if ( currencyArray.length > 2 ){
+    alert("Comprido demais!");
+    return;
   }
 
-  return convertedOutput;
+  // If a single number is given, fill the decimal part with a zero, explicitly
+  if ( currencyArray.length == 1 ){
+    currencyArray[1] = 0;
+  }
+
+  // If a 'short-format' float point is given, like '.5' or '1.', fill the
+  // other part with a zero, explicitly
+  currencyArray = currencyArray.map( e => isNaN(e)?e=0:e );
+
+  console.log("Depois")
+  console.log(currencyArray);
+  console.log(currencyArray.length);
+ // console.log(`Parte inteira: ${currencyArray[0]} ${typeof(currencyArray[0])}`);
+ // console.log(`Parte decimal: ${currencyArray[1]} ${typeof(currencyArray[1])}`);
+
+//                          .map((e, i) => i===0?e:`0.${e}`)
+//                          .reduce((accumulator, currentValue) =>
+//                                   parseInt(accumulator)
+//                                   + parseFloat(currentValue)*100, 0);
+
+
+  //let convertedOutput = undefined;
+
+  //if(outputDisplay === 0){
+  //  convertedOutput = convertedResult;
+  //}else if(outputDisplay === 1){
+  //  convertedOutput = convertedResult/10000;
+  //}
+
+  return currencyArray;
 }
 
-let breakCid = cid.reduce((acc, cv) => acc + currencyConverter(cv[1], 0), 0);
-let toEmptyCid = currencyConverter(breakCid, 1) + price;
+// let breakCid = cid.reduce((acc, cv) => acc + currencyConverter(cv[1], 0), 0);
+// let toEmptyCid = currencyConverter(breakCid, 1) + price;
 
-// priceDisplay.innerHTML = `<strong>PRICE:</strong> <br /> ${price} <br /> 338.67`;
-priceDisplay.innerHTML = `${price}<br />${toEmptyCid}`;
-cashInput.value=toEmptyCid;
+priceDisplay.innerHTML = `${price}`; //<br />${toEmptyCid}`;
+// cashInput.value=toEmptyCid;
 
 /**
  * Calculates the change due
@@ -191,12 +218,13 @@ drawerDisplay.innerHTML = cidTable;
 };
 
 button.addEventListener("click", () => {
-  changeCalculator(price, cid, cashInput.value);
+  // changeCalculator(price, cid, cashInput.value);
 });
 
 cashInput.addEventListener("keydown", (e) => {
   if(e.key === "Enter"){
-    changeCalculator(price, cid, cashInput.value);
+    currencyConverter(cashInput.value,0);
+    //changeCalculator(price, cid, cashInput.value);
   }
 });
 
