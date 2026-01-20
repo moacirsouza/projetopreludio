@@ -12,19 +12,19 @@ Sinta-se à vontade para dar um pulinho no canal, bater um papo e estudar com a 
 
 ## Motivação
 
-Nossa ideia é estudar desenvolvimento de sistemas usando o [free Code Camp](https://freecodecamp.org) (FCC) como principal referência acadêmica.
+Nossa ideia é estudar desenvolvimento de sistemas usando o [free Code Camp](https://freecodecamp.org) (fCC) como principal referência acadêmica.
 
-Além de ser um projeto 100% gratuito (**Sério!**), com suporte completo ao auto-estudo, através de um currículo moderno e recheado de atividades que simulam a experiência real de um desenvolvedor da área, o FCC também emite certificados verificados e amplamente aceitos no mercado de trabalho. Aliás, os certificados **TAMBÉM** são gratuitos!
+Além de ser um projeto 100% gratuito (**Sério!**), com suporte completo ao auto-estudo, através de um currículo moderno e recheado de atividades que simulam a experiência real de um desenvolvedor da área, o fCC também emite certificados verificados e amplamente aceitos no mercado de trabalho. Aliás, os certificados **TAMBÉM** são gratuitos!
 
 Não apenas é possível construir uma carreira a partir das lições e diversos recursos do _site_, mas também vivenciar uma experiência genuinamente engrandecedora ao fazer parte de uma comunidade onde o compartilhamento de conhecimento de qualidade, através de uma conduta de honestidade acadêmica e atitudes positivas são o principal foco das atividades.
 
-É importante frisar que o FCC recebe doações, então, se você acredita que o projeto entrega valor para seus usuários e pode dispor das quantias solicitadas, não esqueça de visitar a [página de doações](https://www.freecodecamp.org/donate/) e fazer sua contribuição. Agradeço em nome do projeto, com muito carinho :heart:
+É importante frisar que o fCC recebe doações, então, se você acredita que o projeto entrega valor para seus usuários e pode dispor das quantias solicitadas, não esqueça de visitar a [página de doações](https://www.freecodecamp.org/donate/) e fazer sua contribuição. Agradeço em nome do projeto, com muito carinho :heart:
 
 \- Moka
 
 ## Recursos
 
-### free Code Camp (FCC)
+### free Code Camp (fCC)
 
 Como dito antes, este é o nosso currículo principal. Vamos começar com _Responsive Web Design_ e concluir todas as atividades que pudermos!
 
