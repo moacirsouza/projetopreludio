@@ -34,7 +34,7 @@ const monetaryUnits = [ 10000, 2000, 1000, 500, 100, 25, 10, 5, 1 ]
  * console.log(currencyConverter('a', 1)) // Expected output: NaN
  */
 const currencyConverter = (inputValue, outputDisplay) => {
-   
+
   let currencyArray = inputValue
                       .toString()
                       .replace(',', '.')
@@ -42,46 +42,36 @@ const currencyConverter = (inputValue, outputDisplay) => {
                       .map( e => e.replace(/[^0-9]/gi,'') )
                       .map( e => parseInt(e) );
 
-  console.log("Antes")
-  console.log(currencyArray);
-  console.log(currencyArray.length);
-
   // Number validations
-  if ( currencyArray.length > 2 ){
-    alert("Comprido demais!");
+  if ( currencyArray.length > 2 ) {
+    alert("Formato incorreto. Verifique a quantidade de vírgulas ou pontos!");
     return;
   }
 
-  // If a single number is given, fill the decimal part with a zero, explicitly
-  if ( currencyArray.length == 1 ){
+  // If a single number is given, explicitly fill the decimal part with a zero 
+  if ( currencyArray.length == 1 ) {
     currencyArray[1] = 0;
   }
 
-  // If a 'short-format' float point is given, like '.5' or '1.', fill the
-  // other part with a zero, explicitly
+  // If a 'short-format' float point is given, like '.5' or '1.', explicitly 
+  // fill the other part with a zero
   currencyArray = currencyArray.map( e => isNaN(e)?e=0:e );
 
-  console.log("Depois")
-  console.log(currencyArray);
-  console.log(currencyArray.length);
- // console.log(`Parte inteira: ${currencyArray[0]} ${typeof(currencyArray[0])}`);
- // console.log(`Parte decimal: ${currencyArray[1]} ${typeof(currencyArray[1])}`);
-
-//                          .map((e, i) => i===0?e:`0.${e}`)
-//                          .reduce((accumulator, currentValue) =>
-//                                   parseInt(accumulator)
-//                                   + parseFloat(currentValue)*100, 0);
-
+  // Ensures that the decimal part of the number doesn't have more than two
+  // digits
+  currencyArray[1] = parseInt( currencyArray[1]
+                               .toString()
+                               .substring(0, 2) )
 
   //let convertedOutput = undefined;
 
-  //if(outputDisplay === 0){
-  //  convertedOutput = convertedResult;
-  //}else if(outputDisplay === 1){
-  //  convertedOutput = convertedResult/10000;
-  //}
+//  if ( outputDisplay === 0 ) {
+//    result = currencyArray;
+//  }else if(outputDisplay === 1){
+//    convertedOutput = convertedResult/10000;
+//  }
 
-  return currencyArray;
+  return result;
 }
 
 // let breakCid = cid.reduce((acc, cv) => acc + currencyConverter(cv[1], 0), 0);
@@ -90,17 +80,11 @@ const currencyConverter = (inputValue, outputDisplay) => {
 priceDisplay.innerHTML = `${price}`; //<br />${toEmptyCid}`;
 // cashInput.value=toEmptyCid;
 
-/**
- * Calculates the change due
- *
- * itemPrice (float): Value of the purchased item, passed a regular float value
- * cidValue (array): 'cid' bidimensional array containing the monetary units
- * names and sum of each unity in the cash register drawer
- * givenCash (string): User input value
- */
 const changeCalculator = (itemPrice, cidValue, givenCash) => {
 
-  givenCash = currencyConverter(parseFloat(givenCash), 0);
+  givenCash = currencyConverter(givenCash, 0);
+
+  console.log(givenCash);
   message.innerHTML = "";
 
   if(isNaN(givenCash)){
@@ -108,13 +92,6 @@ const changeCalculator = (itemPrice, cidValue, givenCash) => {
     cashInput.value = "";
     return;
   }
-  
-  // TODO: O problema está aqui! O CID é reprocessado todas as vezes que a 
-  // função changeCalculator é chamada, portanto, um valor de 0.01 vira 1 na
-  // primeira chamada, depois 100 na segunta, 10000 na terceira e assim por
-  // diante. Esta conversão para inteiro só deve acontecer UMA VEZ. Aqui dentro
-  // deve-se apenas subtrair o valor do troco, seguindo a regra determinada
-  // pelo FCC
 
   // Creates a reversed copy of the cid array with all its numeric
   // values multiplied by 100
@@ -218,13 +195,12 @@ drawerDisplay.innerHTML = cidTable;
 };
 
 button.addEventListener("click", () => {
-  // changeCalculator(price, cid, cashInput.value);
+  changeCalculator(price, cid, cashInput.value);
 });
 
 cashInput.addEventListener("keydown", (e) => {
   if(e.key === "Enter"){
-    currencyConverter(cashInput.value,0);
-    //changeCalculator(price, cid, cashInput.value);
+    changeCalculator(price, cid, cashInput.value);
   }
 });
 
