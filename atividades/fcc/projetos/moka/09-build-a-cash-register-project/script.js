@@ -39,8 +39,7 @@ const currencyConverter = (inputValue, outputDisplay) => {
                       .toString()
                       .replace(',', '.')
                       .split('.')
-                      .map( e => e.replace(/[^0-9]/gi,'') )
-                      .map( e => parseInt(e) );
+                      .map( e => e.replace(/[^0-9]/gi,'') );
 
   // Number validations
   if ( currencyArray.length > 2 ) {
@@ -50,18 +49,17 @@ const currencyConverter = (inputValue, outputDisplay) => {
 
   // If a single number is given, explicitly fill the decimal part with a zero 
   if ( currencyArray.length == 1 ) {
-    currencyArray[1] = 0;
+    currencyArray[1] = "0";
   }
 
   // If a 'short-format' float point is given, like '.5' or '1.', explicitly 
   // fill the other part with a zero
-  currencyArray = currencyArray.map( e => isNaN(e)?e=0:e );
+  currencyArray = currencyArray.map( e => isNaN(e)?e="0":e );
 
   // Ensures that the decimal part of the number doesn't have more than two
   // digits
-  currencyArray[1] = parseInt( currencyArray[1]
-                               .toString()
-                               .substring(0, 2) )
+  currencyArray[1] = currencyArray[1]
+                     .substring(0, 2)
 
   //let convertedOutput = undefined;
 
@@ -71,7 +69,7 @@ const currencyConverter = (inputValue, outputDisplay) => {
 //    convertedOutput = convertedResult/10000;
 //  }
 
-  return result;
+  return currencyArray.map( e => parseInt(e) );
 }
 
 // let breakCid = cid.reduce((acc, cv) => acc + currencyConverter(cv[1], 0), 0);
@@ -89,7 +87,7 @@ const changeCalculator = (itemPrice, cidValue, givenCash) => {
 
   if(isNaN(givenCash)){
     message.innerHTML += "OPEN: Please enter a valid monetary value.";
-    cashInput.value = "";
+    // cashInput.value = "";
     return;
   }
 
