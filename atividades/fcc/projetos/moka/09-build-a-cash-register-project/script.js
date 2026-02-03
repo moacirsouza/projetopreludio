@@ -41,6 +41,7 @@ const currencyConverter = (inputValue, outputDisplay) => {
                       .split('.')
                       .map( e => e.replace(/[^0-9]/gi,'') );
 
+
   // Number validations
   if ( currencyArray.length > 2 ) {
     alert("Formato incorreto. Verifique a quantidade de vírgulas ou pontos!");
@@ -52,9 +53,10 @@ const currencyConverter = (inputValue, outputDisplay) => {
     currencyArray[1] = "0";
   }
 
+  // console.log(currencyArray);
   // If a 'short-format' float point is given, like '.5' or '1.', explicitly 
   // fill the other part with a zero
-  currencyArray = currencyArray.map( e => isNaN(e)?e="0":e );
+  currencyArray = currencyArray.map( e => e.length === 0?e="0":e );
 
   // Ensures that the decimal part of the number doesn't have more than two
   // digits
@@ -71,6 +73,57 @@ const currencyConverter = (inputValue, outputDisplay) => {
 
   return currencyArray.map( e => parseInt(e) );
 }
+
+/**
+ * a1 = primeiro array
+ * a2 = segundo array
+ * op = operação ( add, sub, mul, div )
+ */
+const owa = ( a1, a2, op ) => {
+  
+  a1 = currencyConverter(a1);
+  a2 = currencyConverter(a2);
+  volteAmanha = "Função ainda não implementada. Volte amanhã :D";
+
+  switch (op){
+    case "add":
+      integerPart = a1[0] + a2[0];
+      fractionalPart = ( a1[1] + a2[1] ) % 100;
+      integerPart += Math.trunc( integerPart / 100 );
+
+      result = [ integerPart , fractionalPart ];
+    break;
+    case "sub":
+      integerPart = a1[0] - a2[0];
+      fractionalPart = a1[1] - a2[1];
+
+      if ( fractionalPart < 0 ){
+        fractionalPart -= -100;
+        integerPart -= 1;
+      }
+
+      result = [ integerPart, fractionalPart ];
+    break;
+    case "mul":
+      console.log(volteAmanha);
+    break;
+    case "div":
+      console.log(volteAmanha);
+    break;
+    default:
+      alert("Operação inválida! Use: 'add', 'sub', 'mul' ou 'div'");
+      result = undefined;
+  };
+
+  return parseFloat( result.join('.') );
+}
+
+console.log( owa("0.95", "2525.00", "add") );
+console.log( owa("32,8", "25,12", "sub") );
+console.log( owa("12,85", "9,12", "sub") );
+console.log( owa("0,1", "0,2", "add") );
+// console.log(parseFloat("0.3"));
+
 
 // let breakCid = cid.reduce((acc, cv) => acc + currencyConverter(cv[1], 0), 0);
 // let toEmptyCid = currencyConverter(breakCid, 1) + price;
