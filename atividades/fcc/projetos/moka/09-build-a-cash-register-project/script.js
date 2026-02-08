@@ -41,7 +41,6 @@ const currencyConverter = (inputValue, outputDisplay) => {
                       .split('.')
                       .map( e => e.replace(/[^0-9]/gi,'') );
 
-
   // Number validations
   if ( currencyArray.length > 2 ) {
     alert("Formato incorreto. Verifique a quantidade de vírgulas ou pontos!");
@@ -63,18 +62,11 @@ const currencyConverter = (inputValue, outputDisplay) => {
   currencyArray[1] = currencyArray[1]
                      .substring(0, 2)
 
-  //let convertedOutput = undefined;
-
-//  if ( outputDisplay === 0 ) {
-//    result = currencyArray;
-//  }else if(outputDisplay === 1){
-//    convertedOutput = convertedResult/10000;
-//  }
-
   return currencyArray.map( e => parseInt(e) );
 }
 
 /**
+ * owa: operations with arrays
  * a1 = primeiro array
  * a2 = segundo array
  * op = operação ( add, sub, mul, div )
@@ -88,8 +80,9 @@ const owa = ( a1, a2, op ) => {
   switch (op){
     case "add":
       integerPart = a1[0] + a2[0];
-      fractionalPart = ( a1[1] + a2[1] ) % 100;
-      integerPart += Math.trunc( integerPart / 100 );
+      fractionalSum = a1[1] + a2[1]
+      integerPart += Math.trunc( fractionalSum / 100 );
+      fractionalPart = ( fractionalSum ) % 100;
 
       result = [ integerPart , fractionalPart ];
     break;
@@ -97,7 +90,7 @@ const owa = ( a1, a2, op ) => {
       integerPart = a1[0] - a2[0];
       fractionalPart = a1[1] - a2[1];
 
-      if ( fractionalPart < 0 ){
+      if ( fractionalPart < 0 ) {
         fractionalPart -= -100;
         integerPart -= 1;
       }
@@ -117,13 +110,6 @@ const owa = ( a1, a2, op ) => {
 
   return parseFloat( result.join('.') );
 }
-
-console.log( owa("0.95", "2525.00", "add") );
-console.log( owa("32,8", "25,12", "sub") );
-console.log( owa("12,85", "9,12", "sub") );
-console.log( owa("0,1", "0,2", "add") );
-// console.log(parseFloat("0.3"));
-
 
 // let breakCid = cid.reduce((acc, cv) => acc + currencyConverter(cv[1], 0), 0);
 // let toEmptyCid = currencyConverter(breakCid, 1) + price;
