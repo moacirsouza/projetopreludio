@@ -26,14 +26,18 @@ const message = document.getElementById("message");
 const monetaryUnits = [ 10000, 2000, 1000, 500, 100, 25, 10, 5, 1 ]
 
 /**
- * TODO: Document this later
- * console.log(currencyConverter(1, 1))   // Expected output: 0.01
- * console.log(currencyConverter(1, 0))   // Expected output: 100
- * console.log(currencyConverter(1))      // Expected output: undefined
- * console.log(currencyConverter('a', 0)) // Expected output: NaN
- * console.log(currencyConverter('a', 1)) // Expected output: NaN
+ * currencyConverter: Converts a float point number into an array. In the
+ * array, the integer and fractional parts become the first and second items,
+ * respectively. The input may already be a float number or a string. The
+ * decimal point separator might be a comma (,) or a dot (.).
+ *
+ * Examples:
+ * currencyConverter(1)      // Expected output: [1, 0]
+ * currencyConverter('6')    // Expected output: [6, 0]
+ * currencyConverter("1.3")  // Expected output: [1, 3]
+ * currencyConverter('2,32') // Expected output: [2, 32]
  */
-const currencyConverter = (inputValue, outputDisplay) => {
+const currencyConverter = (inputValue) => {
 
   let currencyArray = inputValue
                       .toString()
@@ -66,6 +70,22 @@ const currencyConverter = (inputValue, outputDisplay) => {
 }
 
 /**
+ * Several tests for the currencyConverter function
+ */
+const caTest = () => { 
+  [
+    1,
+    '2,3',
+    "76,45",
+    6.87,
+    "asdasda123.asdaswee2312312",
+    " "
+  ].forEach( e => console.log( currencyConverter(e) ) );
+}
+
+// caTest();
+
+/**
  * owa: operations with arrays
  * a1 = primeiro array
  * a2 = segundo array
@@ -84,7 +104,7 @@ const owa = ( a1, a2, op ) => {
       integerPart += Math.trunc( fractionalSum / 100 );
       fractionalPart = ( fractionalSum ) % 100;
 
-      result = [ integerPart , fractionalPart ];
+  //    result = [ integerPart , fractionalPart ];
     break;
     case "sub":
       integerPart = a1[0] - a2[0];
@@ -95,7 +115,6 @@ const owa = ( a1, a2, op ) => {
         integerPart -= 1;
       }
 
-      result = [ integerPart, fractionalPart ];
     break;
     case "mul":
       console.log(volteAmanha);
@@ -106,10 +125,26 @@ const owa = ( a1, a2, op ) => {
     default:
       alert("Operação inválida! Use: 'add', 'sub', 'mul' ou 'div'");
       result = undefined;
+      return result;
   };
+
+  result = [ integerPart, fractionalPart ];
 
   return parseFloat( result.join('.') );
 }
+
+/**
+ * Several tests for the owa function
+ */
+const owaTest = () => { 
+  [
+    [ [1, 0], ['2', '3'], 'add' ],    // Addition
+    [ [20, '45'], [12, 80], 'sub' ],  // Subtraction
+    [ [1, 0], ['2', '3'], 'bla' ]     // Invalid operation
+  ].forEach( e => console.log( owa(e[0], e[1], e[2]) ) );
+}
+
+// owaTest();
 
 // let breakCid = cid.reduce((acc, cv) => acc + currencyConverter(cv[1], 0), 0);
 // let toEmptyCid = currencyConverter(breakCid, 1) + price;
